@@ -1,0 +1,9 @@
+{
+  "license": "GPLv3 (http://www.gnu.org/licenses/gpl-3.0.html)",
+  "name": "auto-mark-as-read",
+  "fullName": "Auto Mark as Read",
+  "id": "jid1-FgdjsIsHDUMhRw",
+  "description": "Automatically mark articles in your feedly cloud as read, when you read them on their website.",
+  "author": "freaktechnik",
+  "version": "0.1"
+}
