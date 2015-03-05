@@ -39,5 +39,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/freaktechnik/Auto-Mark-As-Read.git"
-  }
+  },
+  "engines": {
+    "firefox": ">=38",
+    "fennec": ">=38"
+  },
+  "icon": "icon.png",
+  "icon64": "icon64.png"
 }
