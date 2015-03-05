@@ -1,10 +1,43 @@
 {
-  "license": "GPLv3 (http://www.gnu.org/licenses/gpl-3.0.html)",
+  "preferences": [
+    {
+      "type": "control",
+      "name": "logout",
+      "label": "Logout/Login",
+      "title": "Change Authentification State"
+    },
+    {
+      "type": "string",
+      "name": "feedly_clientId",
+      "title": "Feedly API Client ID",
+      "value": "sandbox",
+      "hidden": true
+    },
+    {
+      "type": "string",
+      "name": "feedly_clientSecret",
+      "title": "Feedly API Client Secret",
+      "value": "8LDQOW8KPYFPCQV2UL6J",
+      "hidden": "true"
+    },
+    {
+      "type": "bool",
+      "name": "state",
+      "title": "Login state",
+      "value": false,
+      "hidden": true
+    }
+  ],
+  "license": "MPL-2",
   "name": "auto-mark-as-read",
-  "fullName": "Auto Mark as Read",
-  "id": "jid1-FgdjsIsHDUMhRw",
+  "title": "Auto Mark as Read",
+  "id": "jid1-FgdjsIsHDUMhRw@jetpack",
   "description": "Automatically mark articles in your feedly cloud as read, when you read them on their website.",
   "author": "freaktechnik",
-  "version": "0.1",
-  "dependencies": ["oauthorizer"]
+  "main": "lib/main",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freaktechnik/Auto-Mark-As-Read.git"
+  }
 }
