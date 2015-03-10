@@ -7,6 +7,13 @@
       "title": "Change Authentification State"
     },
     {
+      "type": "integer",
+      "name": "waitTime",
+      "title": "Maximum Wait Time",
+      "description": "The maximum amount of time to wait in seconds until marking an article as read",
+      "value": 30
+    },
+    {
       "type": "string",
       "name": "feedly_clientId",
       "title": "Feedly API Client ID",
