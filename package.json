@@ -33,6 +33,14 @@
       "title": "Login state",
       "value": false,
       "hidden": true
+    },
+    {
+      "type": "integer",
+      "name": "scrollDelta",
+      "title": "Pixel tolerance for scrolling position",
+      "description": "Amount of pixels tolerated for the scroll position not to be at the bottom",
+      "value": "80",
+      "hidden": true
     }
   ],
   "license": "MPL-2",
