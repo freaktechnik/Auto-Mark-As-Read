@@ -48,6 +48,13 @@
       "description": "Amount of pixels tolerated for the scroll position not to be at the bottom",
       "value": "80",
       "hidden": true
+    },
+    {
+      "type": "integer",
+      "name": "syncInterval",
+      "title": "Amount of seconds to wait until fetching the subs again",
+      "value": "600",
+      "hidden": true
     }
   ],
   "license": "MPL-2",
