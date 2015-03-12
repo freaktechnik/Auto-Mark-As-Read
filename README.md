@@ -2,8 +2,15 @@
 
 ## Description
 A Jetpack based Firefox extension, which automatically marks articles in your feedly cloud as read, when you read them on their website.
-The extension checks the URL of a tab against the article URL and only if they match the article is marked as read. The extension tries to remove some of the analytics garbage,
-which could cause unexpected behaviour with sites using GET arguments extensively.
+When a page is recognized as unread article, it will be marked as read in feedly after a certain amount of time was spent on the page, or the page has been scrolled to the bottom.
+The recognition for articles supports:
+
+   * Ignoring tracking parameters for article matching
+   * Articles in the reader on Firefox for Android
+   * Resolving feedproxy.google.com redirects from Feedburner feeds
+   * Using canonical URLs if possible
+
+After the artile has been marked as read, a notification will be shown with an option to keep the article unread.
 
 ## License
 Licensed under the [MPL-2](http://mozilla.org/MPL/2.0/) license.
