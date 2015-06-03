@@ -1,0 +1,6 @@
+{
+  "node": true,
+  "globals": [ "console" ],
+  "moz": true,
+  "esnext": true
+}
