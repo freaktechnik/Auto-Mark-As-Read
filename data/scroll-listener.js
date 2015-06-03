@@ -8,6 +8,8 @@
  *  Report if tab is scrolled to the bottom
  */
 
+/* global self */
+
 let listener = function() {
     if(document.body.scrollHeight - (window.scrollY + window.innerHeight) <= self.options.delta)
         self.port.emit("scrollDone");

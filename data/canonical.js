@@ -8,6 +8,8 @@
  *  Content Script looking for a possible canonical URL of the page
  */
 
+/* global self */
+
 let link = document.querySelector("link[rel='canonical']");
 
 if(link)

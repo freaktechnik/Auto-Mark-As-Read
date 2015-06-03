@@ -1,6 +1,7 @@
 {
   "node": true,
-  "globals": [ "console" ],
+  "predef": [ "console" ],
+  "undef": true,
   "moz": true,
   "esnext": true
 }

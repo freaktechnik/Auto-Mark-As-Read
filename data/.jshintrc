@@ -2,5 +2,6 @@
   "browser": true,
   "moz": true,
   "esnext": true,
-  "globals": [ "console" ]
+  "predef": [ "console" ],
+  "undef": true
 }
