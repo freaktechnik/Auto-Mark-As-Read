@@ -13,6 +13,5 @@ before_script:
 - fx-download --branch nightly -c prerelease --host ftp.mozilla.org firefox
 - cd $TRAVIS_BUILD_DIR
 script:
-- export FIREFOX_BIN=$TRAVIS_BUILD_DIR/../firefox/firefox
-- jpm test --tbpl
+- jpm test --tbpl -b $TRAVIS_BUILD_DIR/../firefox/firefox
 
