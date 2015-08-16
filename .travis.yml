@@ -12,7 +12,7 @@ before_script:
 - cd ..
 - get-firefox -p linux -t firefox.tar.bz2
 - mkdir -p firefox
-- tar -xjf firefox.tar.bz2 -C firefox
+- tar -xjf firefox.tar.bz2
 - cd $TRAVIS_BUILD_DIR
 script:
 - jpm test --tbpl -b $TRAVIS_BUILD_DIR/../firefox/firefox
