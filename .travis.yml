@@ -11,6 +11,7 @@ before_script:
 - npm install get-firefox jpm -g
 - cd ..
 - get-firefox -p linux -t firefox.tar.bz2
+- mkdir -p firefox
 - tar -xjf firefox.tar.bz2 -C firefox
 - cd $TRAVIS_BUILD_DIR
 script:
