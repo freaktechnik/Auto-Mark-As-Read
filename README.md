@@ -17,7 +17,9 @@ After the article has been marked as read, a notification will be shown with an 
 Licensed under the [MPL-2](http://mozilla.org/MPL/2.0/) license.
 
 ## Credits
-Created 2015 by Martin Giger
+Created 2015 by Martin Giger.
+
+URL expansion by [LongURL](http://longurl.org).
 
 ## Building instructions
 This should be buildable with jpm without any further requirements.
