@@ -1,13 +1,9 @@
-/*
- *  Created by Martin Giger
- *
- *  This Source Code Form is subject to the terms of the Mozilla Public License,
- *  v. 2.0. If a copy of the MPL was not distributed with this file, You can
- *  obtain one at http://mozilla.org/MPL/2.0/.
- *
- *  Test resolve module
+/**
+ * Test resolve module
+ * @author Martin Giger
+ * @license MPL-2.0
  */
- 
+
 const { resolve, resolveURLIfNeeded } = require("../lib/resolve");
 const { Promise: sdkPromise, all } = require("sdk/core/promise");
 
@@ -19,8 +15,8 @@ const EXAMPLES = {
         "http://feedproxy.google.com/~r/AndroidPolice/~3/6KV6BiUCLko/story01.htm"
     ],
     result: [
-        "http://humanoids.be/",
-        "http://humanoids.be/",
+        "http://humanoids.be",
+        "http://humanoids.be",
         "http://www.androidpolice.com/2015/06/11/international-giveaway-win-one-of-100-airdroid-premium-membership-codes-from-airdroid-and-android-police/"
     ]
 };
