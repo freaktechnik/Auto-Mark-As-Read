@@ -1,0 +1,29 @@
+{
+    "applications": {
+        "gecko": {
+            "id": "jid1-FgdjsIsHDUMhRw@jetpack",
+            "strict_min_version": "48.0"
+        }
+    },
+    "background": {
+        "scripts": [ "background.js" ]
+    },
+    "content_scripts": [
+        {
+            "matches": ["*"],
+            "js": [ "data/scroll-listener.js" ]
+        }
+    ],
+    "permissions": [
+        "notifications",
+        "tabs",
+        "activeTab"
+    ],
+    "icons": {
+    },
+    "default_locale": "en",
+    "name": "Auto Mark as Read",
+    "description": "Automatically mark articles in your feedly cloud as read, when you read them on their website.",
+    "version": "1.0.0",
+    "manifest_version": 2
+}

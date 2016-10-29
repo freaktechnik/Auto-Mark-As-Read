@@ -10,10 +10,11 @@
 
 /* global self */
 
-let link = document.querySelector("link[rel='canonical']");
+const link = document.querySelector("link[rel='canonical']");
 
-if(link)
-    self.port.emit("done", link.href);
-else
-    self.port.emit("done", null);
-
+if(link) {
+    browser.runtime.sendMessage("done", link.href);
+}
+else {
+    browser.runtime.sendMessage("done", null);
+}

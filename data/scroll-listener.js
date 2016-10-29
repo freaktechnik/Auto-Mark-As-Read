@@ -10,14 +10,19 @@
 
 /* global self */
 
-let listener = function() {
-    if(document.body.scrollHeight - (window.scrollY + window.innerHeight) <= self.options.delta)
-        self.port.emit("scrollDone");
+const listener = () => {
+    browser.storage.local.get("delta").then((delta) => {
+        if(document.body.scrollHeight - (window.scrollY + window.innerHeight) <= delta) {
+            browser.runtime.sendMessage("scrollDone");
+        }
+    });
 };
 
 document.addEventListener("scroll", listener, false);
 
-self.port.once("detach", () => {
-    document.removeEventListener("scroll", listener);
+browser.runtime.onMessage.addListener((message) => {
+    if(message === "detach") {
+        document.removeEventListener("scroll", listener);
+    }
 });
 
