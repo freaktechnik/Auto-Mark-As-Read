@@ -1,5 +1,7 @@
 # Auto Mark as Read
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/freaktechnik/Auto-Mark-As-Read.svg)](https://greenkeeper.io/)
+
 ## Description
 A Jetpack based Firefox extension, which automatically marks articles in your feedly cloud as read, when you read them on their website.
 When a page is recognized as unread article, it will be marked as read in feedly after a certain amount of time was spent on the page, or when the page has been scrolled to the bottom.
